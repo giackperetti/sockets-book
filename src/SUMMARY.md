@@ -1,13 +1,12 @@
 # Summary
 
+[Introduzione](intro.md)
+
 # Fondamenti di Python per la Programmazione con i Sockets
   - [Basi di Python](fondamenti_python/basi_python.md)
     - [Variabili, Tipi di Dati e Strutture Dati](fondamenti_python/basi_python/variabili_tipi_strutture.md)
     - [Strutture di Controllo](fondamenti_python/basi_python/strutture_controllo.md)
     - [Funzioni e Moduli](fondamenti_python/basi_python/funzioni_moduli.md)
-  - [Lavorare con le Librerie di Python](fondamenti_python/librerie_python.md)
-    - [Importare e Utilizzare Moduli](fondamenti_python/librerie_python/importare_utilizzare_moduli.md)
-    - [I Moduli `sys` e `os` per Operazioni a Livello di Sistema](fondamenti_python/librerie_python/moduli_sys_os.md)
   - [Gestione delle Eccezioni](fondamenti_python/eccezioni.md)
     - [Utilizzo di `try`, `except` e `finally`](fondamenti_python/eccezioni/try_except_finally.md)
     - [Gestione di Eccezioni I/O e di Networking](fondamenti_python/eccezioni/eccezioni_io_networking.md)
