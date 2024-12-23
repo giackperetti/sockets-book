@@ -1,0 +1,14 @@
+[book]
+authors = ["Giacomo Peretti"]
+language = "it"
+multilingual = false
+src = "src"
+title = "Socket in Python"
+
+[output.html]
+default-theme = "latte"
+additional-css = ["./theme/catppuccin.css"]
+
+[output.compress]
+page.size = "A4"
+page.landscape = false
