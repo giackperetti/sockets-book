@@ -1,1 +1,0 @@
-# Panoramica del Modello OSI

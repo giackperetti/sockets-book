@@ -17,7 +17,7 @@ f_string: str = f"Number x = {x}"  # Stringa formattata
 is_animal_a_dog: bool = True  # Variabile booleana
 ```
 
-<br/><br/>
+<br/>
 
 Questi tipi di dati base sono il fondamento per creare e lavorare con **strutture dati** più complesse:
 1. **Liste** (`list`): Sequenze ordinate e mutabili, che possono contenere dati omogenei o eterogenei.
@@ -44,5 +44,6 @@ Questi tipi di dati base sono il fondamento per creare e lavorare con **struttur
     voti_studenti: dict[str, str] = {'Pippo': '8', 'Sara': '9.5', 'Gino': '6'}
     ```
 
-<br/><br/>
+<br/>
+
 Queste strutture permettono di rappresentare e manipolare i dati in maniera flessibile ed efficiente, offrendo al programmatore gli strumenti necessari per risolvere problemi di diversa complessità.

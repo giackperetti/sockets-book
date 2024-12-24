@@ -1,1 +1,0 @@
-# Errori Comuni nei Sockets
