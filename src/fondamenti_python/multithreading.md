@@ -1,1 +1,7 @@
 # Introduzione al Multithreading
+
+Il multithreading è una tecnica di programmazione che consente l'esecuzione simultanea di più thread, ossia unità indipendenti di elaborazione all'interno di un processo. In Python, il multithreading è particolarmente utile in contesti in cui è necessario eseguire operazioni concorrenti senza dover creare più processi, come nelle applicazioni di rete, nelle operazioni I/O intensive e nelle interfacce grafiche reattive.
+
+Questo approccio consente di migliorare l'efficienza e la reattività di un programma, specialmente in scenari in cui alcune operazioni potrebbero bloccare l'esecuzione principale, come l'attesa di dati da una rete o la lettura/scrittura su disco. Tuttavia, il multithreading introduce anche nuove sfide, come la gestione della sincronizzazione e la prevenzione delle race condition, che possono causare comportamenti imprevedibili nei programmi.
+
+Questa sezione esplora i concetti fondamentali del multithreading in Python, con un focus specifico sulle sue applicazioni pratiche, in particolare nel networking. Partiremo con un'introduzione ai thread e ai loro casi d'uso principali, per poi analizzare il modulo `threading`, lo strumento principale fornito da Python per lavorare con i thread. Successivamente, approfondiremo i meccanismi di sincronizzazione, come i locks, che aiutano a gestire l'accesso concorrente alle risorse condivise.

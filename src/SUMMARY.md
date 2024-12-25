@@ -17,23 +17,14 @@
 
 # Networking e Sockets
   - [Cosa Sono i Sockets?](networking_sockets/cosa_sono_sockets.md)
-  - [Configurare Python per i Sockets](networking_sockets/configurare_python.md)
-    - [Installazione di Python e dei Moduli Necessari](networking_sockets/configurare_python/installazione.md)
-    - [Testare Script con i Sockets Localmente](networking_sockets/configurare_python/testare_script.md)
   - [Introduzione al Modulo Sockets](networking_sockets/modulo_sockets.md)
-    - [Metodi e Attributi Principali](networking_sockets/modulo_sockets/metodi_attributi.md)
+    - [Metodi Principali](networking_sockets/modulo_sockets/metodi_attributi.md)
     - [Comprendere le Famiglie di Indirizzi (IPv4 vs IPv6)](networking_sockets/modulo_sockets/famiglie_indirizzi.md)
 
 # Programmazione Client-Server con i Sockets
   - [Creare un Server TCP](programmazione_client_server/server_tcp.md)
-    - [Binding a un Indirizzo e Ascolto](programmazione_client_server/server_tcp/binding_ascolto.md)
     - [Gestione di Client Multipli con i Thread](programmazione_client_server/server_tcp/client_multipli_thread.md)
   - [Creare un Client TCP](programmazione_client_server/client_tcp.md)
-    - [Connessione a un Server](programmazione_client_server/client_tcp/connessione_server.md)
-    - [Invio e Ricezione di Dati](programmazione_client_server/client_tcp/invio_ricezione_dati.md)
-  - [Uso dei Thread per la Comunicazione Asincrona](programmazione_client_server/comunicazione_asincrona.md)
-    - [Creare Thread per Invio e Ricezione di Dati](programmazione_client_server/comunicazione_asincrona/creare_thread.md)
-    - [Sicurezza dei Thread e Meccanismi di Blocco](programmazione_client_server/comunicazione_asincrona/sicurezza_blocco.md)
 
 # Casi d’Uso
   - [Creazione di un’Applicazione Chat Asincrona](casi_uso/chat_asincrona.md)
