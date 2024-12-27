@@ -13,7 +13,7 @@ Di seguito viene presentato il codice di un semplice server TCP, che ascolta su 
 ```python
 import socket
 
-HOST = ''  # Accetta connessioni su tutti gli indirizzi IP locali
+HOST = ''  # Accetta connessioni su tutti gli indirizzi IP della rete locale
 PORT = 12345  # Numero di porta su cui il server ascolterà
 
 # Crea un socket per la comunicazione tramite TCP (stream di dati)

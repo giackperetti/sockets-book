@@ -9,10 +9,11 @@ In questa sezione, vedremo come modificare il nostro echo server per accettare f
 La versione modificata dell'echo server si basa sull'utilizzo del modulo `threading` di Python. Ogni volta che il server accetta una connessione, creerà un nuovo thread che gestirà quella connessione. Questo permetterà al server di essere molto più reattivo e di gestire fino a 5 client contemporaneamente.
 
 ### Codice del Server Modificato
+
 ```python
 import socket, threading
 
-HOST = ''  # Accetta connessioni su tutti gli indirizzi IP locali
+HOST = ''  # Accetta connessioni su tutti gli indirizzi IP della rete locale
 PORT = 12345  # Numero di porta su cui il server ascolterà
 
 # Funzione per gestire la comunicazione con un client
@@ -48,14 +49,6 @@ while connections < 5:
 
 s.close()
 ```
-
-### Vantaggi dei Thread per la Gestione di Client Multipli
-
-Utilizzare i thread in un server TCP offre diversi vantaggi:
-
-- **Concorrenza**: Ogni thread gestisce un client, permettendo al server di rispondere rapidamente a molteplici richieste senza dover attendere che una connessione si completi prima di accettare la successiva.
-- **Scalabilità**: Anche se in questo esempio il server gestisce al massimo 5 connessioni, puoi facilmente aumentare questo numero o implementare una logica per gestire connessioni illimitate, migliorando la scalabilità del server.
-- **Indipendenza**: Ogni connessione è gestita indipendentemente, quindi un errore o un ritardo in una connessione non bloccherà il server o le altre connessioni.
 
 ### Conclusione
 
