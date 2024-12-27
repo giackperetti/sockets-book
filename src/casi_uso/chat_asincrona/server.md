@@ -7,7 +7,7 @@ In questa sezione esamineremo il funzionamento del server multithreaded progetta
 ```python
 import socket, threading
 
-HOST = ''  # Il server ascolta su tutti gli indirizzi IP locali
+HOST = ''  # Il server ascolta su tutti gli indirizzi IP della rete locale
 PORT = 12345  # La porta su cui il server accetterà le connessioni
 
 # Funzione per gestire l'invio dei messaggi dal server al client
