@@ -23,6 +23,7 @@ Nel contesto del networking, i thread trovano applicazione in molti scenari prat
 ## Vantaggi e Sfide
 
 L'uso dei thread nel networking offre vantaggi significativi, come una migliore gestione delle operazioni concorrenti e una maggiore efficienza nell'utilizzo delle risorse. Tuttavia, ci sono anche sfide importanti da affrontare:
+
 - **Sincronizzazione**: Quando più thread accedono a risorse condivise, è necessario utilizzare strumenti come i locks per prevenire conflitti.
 - **Overhead**: L'eccessiva creazione di thread può aumentare l'overhead e ridurre le prestazioni, soprattutto in programmi complessi.
 - **Debugging**: I problemi legati al multithreading, come le race condition, possono essere difficili da individuare e correggere.

@@ -5,10 +5,12 @@ Quando più thread lavorano contemporaneamente e condividono risorse comuni, com
 ## Cosa Sono i Locks?
 
 Un lock (o blocco) è un meccanismo che consente di garantire che solo un thread alla volta possa accedere a una risorsa condivisa. Un lock può trovarsi in due stati:
+
 - **Bloccato (Locked)**: Indica che un thread sta attualmente utilizzando la risorsa.
 - **Sbloccato (Unlocked)**: Indica che la risorsa è disponibile per altri thread.
 
 Un thread deve acquisire il lock prima di accedere alla risorsa condivisa e rilasciarlo quando ha terminato l'uso.
+
 ```python
 import threading
 
@@ -30,15 +32,18 @@ for t in threads:
 
 print(f"Valore finale del contatore: {counter}")
 ```
+
 In questo esempio, l'uso del lock garantisce che solo un thread alla volta possa modificare la variabile `counter`, prevenendo risultati errati dovuti a condizioni di gara.
 
 ## Metodi Principali dei Locks
 
 Il modulo `threading` offre la classe `Lock`, con i seguenti metodi principali:
+
 - **`acquire(blocking=True)`**: Tenta di acquisire il lock. Se `blocking=True`, il thread attende fino a quando il lock non è disponibile. Se `blocking=False`, il metodo restituisce immediatamente `False` se il lock è già acquisito.
 - **`release()`**: Rilascia il lock, rendendolo disponibile per altri thread. Deve essere chiamato solo dal thread che ha acquisito il lock.
 
 Esempio di utilizzo con `blocking=False`:
+
 ```python
 import threading
 
@@ -111,24 +116,9 @@ threading.Thread(target=task2).start()
 ```
 
 Per evitare deadlock, è importante:
+
 - Acquisire i lock sempre nello stesso ordine.
 - Utilizzare meccanismi come `RLock` (lock rientrante) o timeout per evitare blocchi permanenti.
-
-Esempio con `RLock`:
-```python
-import threading
-
-lock = threading.RLock()
-
-def task():
-    with lock:
-        with lock:  # RLock consente di acquisire lo stesso lock più volte
-            print("Esecuzione sicura con RLock.")
-
-thread = threading.Thread(target=task)
-thread.start()
-thread.join()
-```
 
 ## Conclusione
 

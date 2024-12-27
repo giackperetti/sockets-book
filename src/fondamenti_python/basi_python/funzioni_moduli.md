@@ -17,27 +17,33 @@ def greet(name: str) -> None:
 
 greet("Mario")  # Output: Ciao, Mario!
 ```
+
 Questa funzione prende un parametro `name` e stampa un messaggio di saluto. Le funzioni possono anche restituire valori usando `return`.
 
+Le funzioni possono avere documentazione tramite stringhe `docstring`, permettendo di descriverne il comportamento e i parametri. I commenti `docstring` vanno scritti sulla linea subito sotto la definizione della funzione e si scrivono con la seguente sequenza di caratteri: `"""`.
+
 ### Funzioni con Restituzione di Valori
+
 ```python
 def somma(a: int, b: int) -> int:
     return a + b
 
 risultato: int = somma(5, 3)  # Risultato: 8
 ```
-Le funzioni possono avere documentazione tramite stringhe `docstring`, permettendo di descriverne il comportamento e i parametri.
 
 ## Moduli
 
 Un modulo è un file Python che contiene definizioni di funzioni, classi o variabili che possono essere riutilizzate in altri file. Per utilizzare un modulo, si usa l'istruzione `import`.
 
 ### Importazione di Moduli
+
 ```python
 import math
 print(math.sqrt(16))  # Output: 4.0
 ```
+
 In questo esempio, il modulo `math` viene utilizzato per calcolare la radice quadrata. È possibile anche importare elementi specifici di un modulo:
+
 ```python
 from datetime import datetime
 print(datetime.now())  # Output: Data e ora corrente
@@ -46,20 +52,25 @@ print(datetime.now())  # Output: Data e ora corrente
 ### Creazione di Moduli Personalizzati
 
 Un modulo personalizzato è semplicemente un file `.py` con funzioni o classi definite dall'utente. Ad esempio, un file chiamato `mio_modulo.py` può contenere:
+
 ```python
 def saluta():
     print("Ciao dal modulo personalizzato!")
 ```
+
 Per usarlo, basta importarlo:
+
 ```python
 import mio_modulo
 mio_modulo.saluta()
 ```
 
 ## Pacchetti
+
 Un pacchetto è una raccolta di moduli organizzati in una struttura a directory. Una directory è considerata un pacchetto se contiene un file `__init__.py`. Questo approccio è utilizzato per organizzare progetti complessi.
 
 Ad esempio, la struttura:
+
 ```
 pacchetto/
     ├── __init__.py
@@ -68,6 +79,7 @@ pacchetto/
 ```
 
 Può essere utilizzata con:
+
 ```python
 from pacchetto import modulo1
 modulo1.funzione()

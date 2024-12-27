@@ -5,12 +5,14 @@ Le eccezioni di I/O (Input/Output) e di rete sono tra le più comuni in Python, 
 ## Eccezioni di I/O
 
 Le operazioni di I/O, come leggere o scrivere file, possono fallire per diversi motivi:
+
 - **FileNotFoundError**: Quando si tenta di accedere a un file che non esiste.
 - **PermissionError**: Quando non si dispone dei permessi necessari per accedere o modificare un file.
 - **IsADirectoryError/NotADirectoryError**: Quando si tenta di accedere a un percorso come se fosse un file o viceversa.
 - **IOError**: Un'eccezione generica per problemi di input/output.
 
 Esempio:
+
 ```python
 try:
     with open("dati.txt", "r") as file:
@@ -20,17 +22,20 @@ except FileNotFoundError:
 except PermissionError:
     print("Errore: permesso negato.")
 ```
+
 In scenari critici, è buona pratica usare il blocco `finally` per chiudere il file in caso di apertura manuale, evitando risorse inutilizzate.
 
 ## Eccezioni di Networking
 
 Le comunicazioni di rete, in particolare quelle basate sui socket, sono suscettibili a errori dovuti a fattori esterni come connettività, server inaccessibili o configurazioni errate. Python offre una serie di eccezioni specifiche per queste situazioni, tra cui:
+
 - **ConnectionRefusedError**: Quando un server rifiuta una connessione.
 - **TimeoutError**: Quando un'operazione di rete supera il tempo massimo di attesa.
-- **socket.error**: Un'eccezione generica per problemi di rete, che può includere errori come indirizzi non validi o connessioni interrotte.
 - **BrokenPipeError**: Quando il lato remoto della connessione chiude il canale inaspettatamente.
+- **socket.error**: Un'eccezione generica per problemi di rete, che può includere errori come indirizzi non validi o connessioni interrotte.
 
 Esempio:
+
 ```python
 import socket
 

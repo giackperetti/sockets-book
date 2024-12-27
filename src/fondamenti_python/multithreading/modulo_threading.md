@@ -5,26 +5,31 @@ Il modulo `threading` in Python fornisce gli strumenti necessari per creare e ge
 ## Creazione di un Thread
 
 Per creare un thread, il modulo `threading` mette a disposizione la classe `Thread`. È possibile avviare un nuovo thread in due modi principali:
+
 - Passando una funzione al costruttore di `Thread`.
 - Estendendo la classe `Thread` e sovrascrivendo il metodo `run`.
+
 ```python
 # Esempio 1: Utilizzo di una funzione con `Thread`
-import threading
+import threading, time
 def worker():
     print("Eseguendo il thread...")
+    time.sleep(15)
 thread = threading.Thread(target=worker)
 thread.start()
 thread.join()
 
 # Esempio 2: Estensione della classe `Thread`
-import threading
+import threading, time
 class MyThread(threading.Thread):
     def run(self):
         print("Thread personalizzato in esecuzione...")
+        time.sleep(15)
 my_thread = MyThread()
 my_thread.start()
 my_thread.join()
 ```
+
 ## Metodi Principali della Classe `Thread`
 
 La classe `Thread` include diversi metodi utili per lavorare con i thread:
@@ -50,6 +55,7 @@ print(thread.is_alive())
 Nel contesto del networking, i thread sono spesso utilizzati per gestire più connessioni client contemporaneamente. Ad esempio, un server può creare un thread dedicato per ogni client che si connette, assicurando che le richieste siano elaborate in parallelo senza rallentare l'intero sistema.
 
 Esempio:
+
 ```python
 import threading
 import socket
@@ -62,7 +68,7 @@ def handle_client(client_socket):
 
 server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server.bind(("0.0.0.0", 9999))
-server.listen(5)
+server.listen(5) # Concedi fino a 5 connessioni concorrenti
 
 while True:
     client, addr = server.accept()

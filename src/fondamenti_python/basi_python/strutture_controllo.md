@@ -29,7 +29,7 @@ In questo esempio, finché il valore di `count` è minore o uguale a 5, il ciclo
 
 ## Cicli `for`
 
-Il ciclo `for` in Python è utilizzato per iterare su una sequenza (come liste, tuple, stringhe o intervalli) o su altri oggetti iterabili. Iterare su una sequenza è chiamato "attraversamento".
+Il ciclo `for` in Python è utilizzato per iterare su una sequenza (come liste, tuple, stringhe o intervalli) o su altri oggetti iterabili.
 
 ```python
 for char in "Python":
