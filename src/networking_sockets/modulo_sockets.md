@@ -7,15 +7,12 @@ In questa sezione, esploreremo il modulo `socket` di Python, comprendendo i prin
 ## Struttura del Modulo Sockets
 
 Il modulo `socket` permette di stabilire connessioni tra dispositivi tramite l'uso di:
-- **Client-Socket**: Il lato che inizia la connessione e invia richieste.
-- **Server-Socket**: Il lato che riceve le richieste e invia risposte.
+
+- **Socket Client**: Il lato che inizia la connessione e invia richieste.
+- **Socket Server**: Il lato che riceve le richieste e invia risposte.
 
 Ogni socket è associato a un indirizzo IP e a una porta, costituendo un endpoint per la comunicazione.
 
 ## Obiettivi della Sezione
 
-Questa sezione si concentrerà su:
-1. **I principali metodi** del modulo `socket`, per comprendere come utilizzare i socket in Python.
-2. **Le famiglie di indirizzi**, con una particolare attenzione alle differenze tra **IPv4** e **IPv6**, e come queste influenzano la creazione e gestione di socket.
-
-Nelle pagine seguenti esploreremo in dettaglio questi concetti, con esempi pratici che ti permetteranno di acquisire familiarità con il modulo `socket` e comprendere appieno le sue potenzialità.
+Questa sezione si concentrerà sui principali metodi del modulo `socket`, per comprendere come utilizzare i socket in Python.

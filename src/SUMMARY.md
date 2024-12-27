@@ -21,7 +21,6 @@
 - [Cosa Sono i Sockets?](networking_sockets/cosa_sono_sockets.md)
 - [Introduzione al Modulo Sockets](networking_sockets/modulo_sockets.md)
   - [Metodi Principali](networking_sockets/modulo_sockets/metodi_attributi.md)
-  - [Comprendere le Famiglie di Indirizzi (IPv4 vs IPv6)](networking_sockets/modulo_sockets/famiglie_indirizzi.md)
 
 # Programmazione Client-Server con i Sockets
 
