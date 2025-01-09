@@ -3,7 +3,7 @@ authors = ["Giacomo Peretti"]
 language = "it"
 multilingual = false
 src = "src"
-title = "Socket in Python"
+title = "Socket in Python - Giacomo Peretti"
 
 [output.html]
 default-theme = "latte"
