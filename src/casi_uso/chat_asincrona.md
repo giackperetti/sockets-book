@@ -8,8 +8,9 @@ Nel nostro sistema di chat il server crea una connessione e scambia messaggi con
 
 Questa sezione si divide in tre parti principali:
 
-1. **Implementazione del Server**: Come costruire un server TCP multithreaded capace di scambiare messaggi con un client.
-2. **Implementazione del Client**: Come creare un client TCP che possa inviare e ricevere messaggi in tempo reale, mantenendo un'interfaccia reattiva grazie all'uso dei thread.
+1. **Diagrammi di Flusso del Server e del Client**: Descrizione visiva delle operazioni del server e del client.
+2. **Implementazione del Server**: Come costruire un server TCP multithreaded capace di scambiare messaggi con un client.
+3. **Implementazione del Client**: Come creare un client TCP che possa inviare e ricevere messaggi in tempo reale, mantenendo un'interfaccia reattiva grazie all'uso dei thread.
 
 ## Perché Multithreading?
 
