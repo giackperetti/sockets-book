@@ -31,6 +31,9 @@
 # Casi d’Uso
 
 - [Creazione di un’Applicazione Chat Asincrona](casi_uso/chat_asincrona.md)
-  - [Diagrammi di Flusso del Server e del Client](casi_uso/diagrammi_flusso.md)
+  - [Diagrammi di Flusso del Server e del Client](casi_uso/chat_asincrona/diagrammi_flusso.md)
   - [Implementazione del Server](casi_uso/chat_asincrona/server.md)
   - [Implementazione del Client](casi_uso/chat_asincrona/client.md)
+- [Creazione di un’Applicazione Tris](casi_uso/tris.md)
+  - [Diagramma di Flusso del Programma](casi_uso/tris/diagrammi_flusso.md)
+  - [Implementazione della Logica di Gioco](casi_uso/tris/implementazione.md)
