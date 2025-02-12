@@ -7,5 +7,5 @@ title = "Socket in Python - Giacomo Peretti"
 
 [output.html]
 default-theme = "latte"
-preferred-dark-theme = "mocha"
+preferred-dark-theme = "macchiato"
 additional-css = ["./theme/catppuccin.css"]
