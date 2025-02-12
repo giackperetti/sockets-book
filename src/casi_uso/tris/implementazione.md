@@ -320,7 +320,7 @@ def main():
         client = Client(host=args.host, port=args.port)
         client.run()
     else:
-        server = Server(port=args.port)
+        server = Server(host=args.host, port=args.port)
         server.run()
 
 
