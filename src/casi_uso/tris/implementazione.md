@@ -188,6 +188,7 @@ class Server:
                 print(f"Server error: {str(e)}")
 
 
+# Classe per gestire i client
 class Client:
     def __init__(self, host, port):
         self.host = host
