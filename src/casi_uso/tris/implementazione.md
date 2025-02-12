@@ -41,7 +41,12 @@ class TicTacToe:
 
     def make_move(self, position, symbol):
         # Converte la posizione inserita dall'utente in coordinate di riga e colonna
-        row, col = (int(position) - 1) // 3, (int(position) - 1) % 3
+        POSITION_TO_COORDINATE = {
+            1: (0, 0), 2: (0, 1), 3: (0, 2),
+            4: (1, 0), 5: (1, 1), 6: (1, 2),
+            7: (2, 0), 8: (2, 1), 9: (2, 2)
+        }
+        row, col = POSITION_TO_COORDINATE[int(position)]
         # Verifica se la posizione è disponibile e inserisce il simbolo del giocatore
         if self.board[row][col] not in ["X", "O"]:
             self.board[row][col] = symbol
