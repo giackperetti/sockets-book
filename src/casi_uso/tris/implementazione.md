@@ -334,3 +334,39 @@ if __name__ == "__main__":
     main()
 
 ```
+
+## Funzionamento
+
+1. **Avvio del Server e del Client**:
+
+   - Il programma può essere eseguito sia in modalità server che in modalità client a seconda degli argomenti forniti alla CLI.
+   - Il server viene avviato specificando un indirizzo IP e una porta su cui ascoltare le connessioni in ingresso.
+   - Il client si connette al server specificando l'IP e la porta del server.
+
+2. **Autenticazione e Connessione**:
+
+   - Quando un client si connette al server, il server verifica l'autenticità del client tramite un token univoco.
+   - Se la verifica va a buon fine, il client viene accettato e può iniziare la sessione di gioco.
+
+3. **Inizializzazione del Gioco**:
+
+   - Una volta che due giocatori si sono connessi al server, inizia la partita.
+   - Il server assegna casualmente un simbolo a ciascun giocatore (`X` o `O`).
+   - Il tabellone viene inizializzato e inviato ai giocatori.
+
+4. **Gestione del Turno di Gioco**:
+
+   - Il server comunica a uno dei due giocatori che è il suo turno, mentre l’altro rimane in attesa.
+   - Il giocatore attivo sceglie una posizione sulla griglia e invia la mossa al server.
+   - Il server aggiorna il tabellone e trasmette lo stato aggiornato a entrambi i giocatori.
+
+5. **Verifica delle Condizioni di Vittoria**:
+
+   - Dopo ogni mossa, il server verifica se un giocatore ha vinto controllando righe, colonne e diagonali.
+   - Se un giocatore ha vinto, il server comunica il risultato a entrambi e chiude la partita.
+   - Se la griglia è piena senza un vincitore, la partita termina con un pareggio.
+
+6. **Terminazione della Connessione**:
+
+   - Una volta conclusa la partita, il server chiude la connessione con i giocatori.
+   - Se un giocatore si disconnette inaspettatamente, il server termina la partita e notifica l'altro giocatore.
